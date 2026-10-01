@@ -1,0 +1,284 @@
+
+/* Fondo de la página */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: #b8e9e7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tarjeta principal */
+.login-card {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  min-height: 450px;
+  background-color: #fff;
+  border: 1px solid #dce5e8;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Formulario */
+.login-content {
+  flex: 1;
+  min-width: 0;
+  padding: 18px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.login-header h3 {
+  color: #263449;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.login-header p {
+  color: #667085;
+  font-size: 8px;
+  margin: 0;
+}
+
+/* Separador */
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #98a2b3;
+  font-size: 7px;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+/* Botón de Google */
+.google-button {
+  width: 100%;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  background: #fff;
+  border: 1px solid #e0e5e9;
+  border-radius: 5px;
+  color: #344054;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.google-button:hover {
+  background: #f8fafc;
+}
+
+.google-icon {
+  font-size: 12px;
+  font-weight: bold;
+  color: #4285f4;
+}
+
+/* Campos */
+.login-field {
+  margin-bottom: 10px;
+}
+
+.login-field label {
+  display: block;
+  margin-bottom: 4px;
+  color: #344054;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.login-field .form-control {
+  height: 29px;
+  padding: 5px 8px;
+  font-size: 9px;
+  border-color: #dfe4e8;
+  border-radius: 4px;
+}
+
+.login-field .form-control:focus {
+  border-color: #08b5b5;
+  box-shadow: 0 0 0 2px rgba(8, 181, 181, 0.12);
+}
+
+/* Contraseña */
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe4e8;
+  border-radius: 4px;
+  padding-left: 7px;
+}
+
+.password-wrapper .form-control {
+  border: none;
+  box-shadow: none;
+  min-width: 0;
+}
+
+.password-wrapper .form-control:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.lock-icon {
+  font-size: 11px;
+  color: #98a2b3;
+}
+
+.show-password {
+  border: none;
+  background: transparent;
+  color: #667085;
+  font-size: 8px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Recordarme y recuperar contraseña */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin: 8px 0 13px;
+  font-size: 8px;
+}
+
+.remember-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #667085;
+  white-space: nowrap;
+}
+
+.remember-option input {
+  accent-color: #08b5b5;
+}
+
+.login-options a {
+  color: #08a9a9;
+  text-decoration: none;
+  text-align: right;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+  width: 100%;
+  height: 34px;
+  background: #08b5b5;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 9px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-button:hover {
+  background: #079898;
+}
+
+/* Registro */
+.register-text {
+  margin-top: 15px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #667085;
+  font-size: 8px;
+}
+
+.register-text a {
+  color: #263449;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Decoración turquesa */
+.login-decoration {
+  position: relative;
+  width: 75px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: #58c4bf;
+}
+
+.decoration-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.circle-top {
+  top: 28px;
+  left: 35px;
+}
+
+.circle-left {
+  top: 45%;
+  left: -70px;
+}
+
+.circle-right {
+  top: 60%;
+  right: -70px;
+}
+
+.circle-bottom {
+  bottom: 25px;
+  left: 35px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 15px;
+  }
+
+  .login-card {
+    max-width: 360px;
+  }
+
+  .login-content {
+    padding: 18px 14px;
+  }
+
+  .login-decoration {
+    width: 22px;
+  }
+
+  .login-options {
+    flex-wrap: wrap;
+  }
+}
+
+.registro-exact-footer{
+
+  background-color: #BCE7E6;
+}
+
